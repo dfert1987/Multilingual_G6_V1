@@ -16,16 +16,34 @@ export const TableSection = () => {
   return (
     <div className="main">
       <ScrollBar />
-      <AnchorCharts id="AnchorCharts" />
-      <MultilingualGlossaries id="MultilingualGlossaries" />
-      <NoticeNote id="NoticeAndNote" />
+      <div id="AnchorCharts">
+        <AnchorCharts />
+      </div>
+      <div id="MultilingualGlossaries">
+        <MultilingualGlossaries />
+      </div>
+      <div id="NoticeAndNote">
+        <NoticeNote />
+      </div>
       <Bookmark />
-      <Unit1Resources id="Unit1" />
-      <Unit2Resources id="Unit2" />
-      <Unit3Resources id="Unit3" />
-      <Unit4Resources id="Unit4" />
-      <Unit5Resources id="Unit5" />
-      <Unit6Resources id="Unit6" />
+      <div id="Unit1">
+        <Unit1Resources />
+      </div>
+      <div id="Unit2">
+        <Unit2Resources />
+      </div>
+      <div id="Unit3">
+        <Unit3Resources />
+      </div>
+      <div id="Unit4">
+        <Unit4Resources />
+      </div>
+      <div id="Unit5">
+        <Unit5Resources />
+      </div>
+      <div id="Unit6">
+        <Unit6Resources />
+      </div>
     </div>
   );
 };

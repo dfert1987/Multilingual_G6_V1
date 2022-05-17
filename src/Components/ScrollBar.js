@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AnchorChart } from "../Assets/Data/AnchorChart";
 import { MultilingualResourceData } from "../Assets/Data/MultilingualResourceData";
 import { NoticeAndNote } from "../Assets/Data/NoticeAndNote";
@@ -8,7 +8,7 @@ import { Unit3Letter } from "../Assets/Data/Unit3Letter";
 import { Unit4Letter } from "../Assets/Data/Unit4Letter";
 import { Unit5Letter } from "../Assets/Data/Unit5Letter";
 import { Unit6Letter } from "../Assets/Data/Unit6Letter";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export const ScrollBar = () => {
   return (
@@ -19,59 +19,77 @@ export const ScrollBar = () => {
             <li className="navButton">
               <Link
                 activeClass="active"
-                to={AnchorChart}
+                to="AnchorCharts"
                 spy={true}
                 smooth={true}
-              />
-              Anchor Charts
+              >
+                Anchor Charts
+              </Link>
             </li>
           ) : null}
           {MultilingualResourceData ? (
             <li className="navButton">
-              <Link to="MultilingualResources" spy={true} smooth={true} />
-              Multilingual Resources
+              <Link
+                to="MultilingualGlossaries"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+              >
+                MultiLingual Glossaries
+              </Link>
             </li>
           ) : null}
           {NoticeAndNote ? (
             <li className="navButton">
-              <Link to="NoticeAndNote" spy={true} smooth={true} />
-              Notice and Note
+              <Link
+                to="NoticeAndNote"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+              >
+                Notice and Note
+              </Link>
             </li>
           ) : null}
           {Unit1Letter ? (
             <li className="navButton">
-              <Link to="Unit1" spy={true} smooth={true} />
-              Unit 1
+              <Link to="Unit1" spy={true} smooth={true} activeClass="active">
+                Unit 1
+              </Link>
             </li>
           ) : null}
           {Unit2Letter ? (
             <li className="navButton">
-              <Link to="Unit2" spy={true} smooth={true} />
-              Unit 2
+              <Link to="Unit2" spy={true} activeClass="active" smooth={true}>
+                Unit 2
+              </Link>
             </li>
           ) : null}
           {Unit3Letter ? (
             <li className="navButton">
-              <Link to="Unit3" spy={true} smooth={true} />
+              <Link to="Unit3" activeClass="active" spy={true} smooth={true} />
               Unit 3
             </li>
           ) : null}
           {Unit4Letter ? (
             <li className="navButton">
-              <Link to="Unit4" spy={true} smooth={true} />
-              Unit 4
+              <Link to="Unit4" activeClass="active" spy={true} smooth={true}>
+                Unit 4
+              </Link>
             </li>
           ) : null}
           {Unit5Letter ? (
             <li className="navButton">
-              <Link to={Unit5Letter} spy={true} smooth={true} />
-              Unit 5
+              <Link to="Unit5" activeClass="active" spy={true} smooth={true}>
+                Unit 5
+              </Link>
             </li>
           ) : null}
           {Unit6Letter ? (
             <li className="navButton">
-              <Link to={Unit6Letter} spy={true} smooth={true} />
-              Unit 6
+              <Link to="Unit6" activeClass="active" spy={true} smooth={true}>
+                Unit 6
+              </Link>
             </li>
           ) : null}
         </ul>
