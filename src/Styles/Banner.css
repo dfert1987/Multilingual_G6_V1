@@ -1,0 +1,73 @@
+.banner-container {
+  background-color: #8f1e74;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  width: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 6em;
+  padding-right: 6;
+}
+
+.grade-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.grade {
+  color: white;
+  font-family: "Gilroy";
+  margin-bottom: 0;
+  position: relative;
+  top: 1em;
+}
+
+.number {
+  color: white;
+  font-family: "Gilroy Extra Bold";
+  font-size: 4em;
+  margin: 0;
+  padding-left: 0.1em;
+}
+
+.main-title {
+  color: white;
+  font-family: "Gilroy Extra Bold";
+  font-size: 4em;
+  margin: 0;
+  padding-left: 0.75em;
+  padding-top: 0.63em;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-left: 33em;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding-top: 4.5em;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+.nav-item {
+  font-family: "Gilroy-Bold";
+  font-size: 2em;
+  margin: 0;
+}
+
+.nav-link.left {
+  padding-right: 1.5em;
+  margin: 0;
+}
