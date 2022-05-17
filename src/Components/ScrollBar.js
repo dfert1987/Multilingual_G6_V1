@@ -3,12 +3,8 @@ import { AnchorChart } from "../Assets/Data/AnchorChart";
 import { MultilingualResourceData } from "../Assets/Data/MultilingualResourceData";
 import { NoticeAndNote } from "../Assets/Data/NoticeAndNote";
 import { Unit1Letter } from "../Assets/Data/Unit1Letter";
-import { Unit2Letter } from "../Assets/Data/Unit2Letter";
-import { Unit3Letter } from "../Assets/Data/Unit3Letter";
-import { Unit4Letter } from "../Assets/Data/Unit4Letter";
-import { Unit5Letter } from "../Assets/Data/Unit5Letter";
-import { Unit6Letter } from "../Assets/Data/Unit6Letter";
 import { Link } from "react-scroll";
+import "../Styles/ScrollBar.css";
 
 export const ScrollBar = () => {
   return (
@@ -35,7 +31,7 @@ export const ScrollBar = () => {
                 spy={true}
                 smooth={true}
               >
-                MultiLingual Glossaries
+                Multilingual Glossaries
               </Link>
             </li>
           ) : null}
@@ -54,41 +50,7 @@ export const ScrollBar = () => {
           {Unit1Letter ? (
             <li className="navButton">
               <Link to="Unit1" spy={true} smooth={true} activeClass="active">
-                Unit 1
-              </Link>
-            </li>
-          ) : null}
-          {Unit2Letter ? (
-            <li className="navButton">
-              <Link to="Unit2" spy={true} activeClass="active" smooth={true}>
-                Unit 2
-              </Link>
-            </li>
-          ) : null}
-          {Unit3Letter ? (
-            <li className="navButton">
-              <Link to="Unit3" activeClass="active" spy={true} smooth={true} />
-              Unit 3
-            </li>
-          ) : null}
-          {Unit4Letter ? (
-            <li className="navButton">
-              <Link to="Unit4" activeClass="active" spy={true} smooth={true}>
-                Unit 4
-              </Link>
-            </li>
-          ) : null}
-          {Unit5Letter ? (
-            <li className="navButton">
-              <Link to="Unit5" activeClass="active" spy={true} smooth={true}>
-                Unit 5
-              </Link>
-            </li>
-          ) : null}
-          {Unit6Letter ? (
-            <li className="navButton">
-              <Link to="Unit6" activeClass="active" spy={true} smooth={true}>
-                Unit 6
+                Unit Resources
               </Link>
             </li>
           ) : null}

@@ -1,0 +1,24 @@
+.scroll-bar {
+  background-color: rgb(225, 193, 252);
+}
+
+.choices-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: left;
+  padding-left: 6em;
+}
+
+.navButton {
+  padding-right: 2em;
+  font-family: "Gilroy Extra Bold";
+  font-size: 1.25em;
+  cursor: pointer;
+  color: rgb(45, 45, 45);
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  color: white;
+}
