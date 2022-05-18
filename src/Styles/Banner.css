@@ -1,8 +1,8 @@
 .banner-container {
   background-color: #8f1e74;
-  padding-bottom: 0.5em;
   padding-top: 1em;
   width: 100%;
+  min-width: 800px;
 }
 
 .text-container {
@@ -17,21 +17,26 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  position: relative;
+  top: 0.8em;
 }
 
 .grade {
   color: white;
   font-family: "Gilroy";
+  font-size: 1.5em;
   margin-bottom: 0;
+  margin-left: 0.75em;
   position: relative;
-  top: 1em;
+  margin-top: 0;
+  top: 1.25em;
 }
 
 .number {
   color: white;
   font-family: "Gilroy Extra Bold";
-  font-size: 4em;
   margin: 0;
+  font-size: 8em;
   padding-left: 0.1em;
 }
 
@@ -40,8 +45,8 @@
   font-family: "Gilroy Extra Bold";
   font-size: 4em;
   margin: 0;
-  padding-left: 0.75em;
-  padding-top: 0.63em;
+  padding-left: 0.25em;
+  padding-top: 0.35em;
 }
 
 .navigation-container {
@@ -49,13 +54,16 @@
   flex-direction: row;
   justify-content: right;
   text-align: right;
+  padding-right: 6em;
+  padding-left: 0.5em;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
-  padding-top: 4.5em;
+  padding-top: 4em;
   transition: 0.3s;
+  font-size: 2em;
 }
 
 .nav-link:hover {
@@ -64,11 +72,41 @@
 
 .nav-item {
   font-family: "Gilroy-Bold";
-  font-size: 2em;
   margin: 0;
+}
+
+.grade-and-title {
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-link.left {
   padding-right: 1.5em;
   margin: 0;
+}
+
+@media (min-width: 1349px) {
+  .nav-link {
+    padding-top: 2.3em;
+  }
+  .number {
+    font-size: 4em;
+    margin-left: 0;
+  }
+  .grade {
+    position: relative;
+    top: 1em;
+    margin-left: 0;
+    font-size: 1em;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .main-title {
+    padding-top: 0.75em;
+  }
+
+  .grade-container {
+    position: relative;
+    top: 2em;
+  }
 }

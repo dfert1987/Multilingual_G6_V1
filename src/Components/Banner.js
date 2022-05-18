@@ -6,11 +6,13 @@ const Banner = () => {
   return (
     <div className="banner-container">
       <div className="text-container">
-        <div className="grade-container">
-          <h4 className="grade">GRADE</h4>
-          <h2 className="number">6</h2>
+        <div className="grade-and-title">
+          <div className="grade-container">
+            <h4 className="grade">GRADE</h4>
+            <h2 className="number">6</h2>
+          </div>
+          <h1 className="main-title">Multilingual Resources</h1>
         </div>
-        <h1 className="main-title">Multilingual Resources</h1>
         <div className="navigation-container">
           <Link className="nav-link left" to="/">
             <h3 className="nav-item">Diagram</h3>
