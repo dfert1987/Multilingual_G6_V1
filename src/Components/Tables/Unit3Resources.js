@@ -3,6 +3,7 @@ import { Unit3Letter } from "../../Assets/Data/Unit3Letter";
 import { Unit3AuthenticText } from "../../Assets/Data/Unit3AuthenticText";
 import { Unit3SelectionSupport } from "../../Assets/Data/Unit3SelectionSupport";
 import PDFIcon from "../../Assets/Icons/PDFIcon.png";
+import EbookIcon from "../../Assets/Icons/EbookIcon.png";
 import TOCEditIcon from "../../Assets/Icons/TOCEditIcon.svg";
 import "../../Styles/Resources.css";
 
@@ -39,7 +40,7 @@ export const Unit3Resources = () => {
       return Unit3Letter.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)}`}>
+            <div className={`info-row icons gloss ${stripes(index)}`}>
               <p className="icon-input"> </p>
             </div>
           </React.Fragment>
@@ -54,7 +55,7 @@ export const Unit3Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -64,7 +65,7 @@ export const Unit3Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -80,7 +81,7 @@ export const Unit3Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -90,7 +91,7 @@ export const Unit3Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -106,7 +107,7 @@ export const Unit3Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -116,7 +117,7 @@ export const Unit3Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -147,9 +148,9 @@ export const Unit3Resources = () => {
         <div className="info-row book icon">
           <a href={Unit3AuthenticText.Link}>
             <img
-              className="icon-input tall-grid"
+              className="icon-input tall-grid longest"
               alt="Authentic Text PDF Icon"
-              src={PDFIcon}
+              src={EbookIcon}
             />
           </a>
         </div>
@@ -162,7 +163,7 @@ export const Unit3Resources = () => {
       return Unit3SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row ${stripes(index)} tall`}>
+            <div className={`info-row unit3 ${stripes(index)} tall`}>
               {item.Excerpt ? (
                 <p className="title-from">
                   <i className="from">from </i>
@@ -183,7 +184,11 @@ export const Unit3Resources = () => {
       return Unit3SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div
+              className={`info-row icons selections unit3 ${stripes(
+                index
+              )} tall`}
+            >
               {item.MultilingualSummary !== "NA" ? (
                 <a href={item.MultilingualSummary}>
                   <img
@@ -205,7 +210,11 @@ export const Unit3Resources = () => {
       return Unit3SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div
+              className={`info-row icons selections unit3 ${stripes(
+                index
+              )} tall`}
+            >
               {item.Summary !== "NA" ? (
                 <a href={item.Summary}>
                   <img
@@ -227,7 +236,11 @@ export const Unit3Resources = () => {
       return Unit3SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div
+              className={`info-row icons selections unit3 ${stripes(
+                index
+              )} tall`}
+            >
               {item.TextSketchEnglish !== "NA" ? (
                 <a href={item.TextSketchEnglish}>
                   <img
@@ -244,34 +257,16 @@ export const Unit3Resources = () => {
     }
   };
 
-  const presSketch = () => {
-    if (Unit3SelectionSupport) {
-      return Unit3SelectionSupport.map((item, index) => {
-        return (
-          <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
-              {item.TextSketchPresentation !== "NA" ? (
-                <a href={item.TextSketchPresentation}>
-                  <img
-                    className="icon-input tall"
-                    alt="Text Sketch Presentation"
-                    src={PDFIcon}
-                  />
-                </a>
-              ) : null}
-            </div>
-          </React.Fragment>
-        );
-      });
-    }
-  };
-
   const spanishSketch = () => {
     if (Unit3SelectionSupport) {
       return Unit3SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div
+              className={`info-row icons selections unit3 ${stripes(
+                index
+              )} tall`}
+            >
               {item.TextSketchSpanish !== "NA" ? (
                 <a href={item.TextSketchSpanish}>
                   <img
@@ -291,9 +286,9 @@ export const Unit3Resources = () => {
   return (
     <div className="unit-container">
       <section className="above-table unit">
-        <h5 className="unit-title">Unit 3 Resources</h5>
+        <h5 className="unit-title not-one">Unit 3 Resources</h5>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header">
             <h4 className="header-text topic-header-text charts-text">
@@ -303,20 +298,22 @@ export const Unit3Resources = () => {
           <div className="main-column topics-text unit">{firstColumn()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Spanish</h4>
+          <div className="header-row note topic-header language">
+            <h4 className="header-text small threeLanguages">Spanish</h4>
           </div>
           <div className="main-column topics-text small-unit">{showSpan()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Portuguese</h4>
+          <div className="header-row note topic-header language">
+            <h4 className="header-text small threeLanguages">Portuguese</h4>
           </div>
           <div className="main-column topics-text small-unit">{showPort()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Hatian Creole</h4>
+          <div className="header-row note topic-header right language">
+            <h4 className="header-text small threeLanguages haitian">
+              Haitian Creole
+            </h4>
           </div>
           <div className="main-column topics-text small-unit right">
             {showHaitian()}
@@ -325,20 +322,22 @@ export const Unit3Resources = () => {
         <section className="column topic note-charts-unit small invisible"></section>
         <section className="column topic note-charts-unit small invisible"></section>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header">
             <h4 className="header-text topic-header-text charts-text">
               Spanish Authentic Text
             </h4>
           </div>
-          <div className="main-column topics-text unit">{bookColumn()}</div>
+          <div className="main-column topics-text unit authentic unit3">
+            {bookColumn()}
+          </div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
+          <div className="header-row note topic-header right">
             <h4 className="header-text small">Spanish</h4>
           </div>
-          <div className="main-column topics-text small-unit right tall">
+          <div className="main-column topics-text small-unit right tall authentic unit3">
             {bookIcon()}
           </div>
         </section>
@@ -347,7 +346,7 @@ export const Unit3Resources = () => {
         <section className="column topic note-charts-unit small invisible"></section>
         <section className="column topic note-charts-unit small invisible"></section>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header tall">
             <h4 className="header-text topic-header-text charts-text tall">
@@ -360,7 +359,7 @@ export const Unit3Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+            <h4 className="header-text small tall-short multiling">
               Multilingual Summary
             </h4>
           </div>
@@ -370,8 +369,8 @@ export const Unit3Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
-              Summary/Adapted Text
+            <h4 className="header-text small tall-short summary">
+              Summary / Adapted Text
             </h4>
           </div>
           <div className="main-column topics-text small-unit right tall">
@@ -380,7 +379,7 @@ export const Unit3Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+            <h4 className="header-text small tall-short english">
               Text Sketch (English)
             </h4>
           </div>
@@ -389,18 +388,8 @@ export const Unit3Resources = () => {
           </div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header tall">
-            <h4 className="header-text small tall">
-              Text Sketch (Presentation)
-            </h4>
-          </div>
-          <div className="main-column topics-text small-unit right tall">
-            {presSketch()}
-          </div>
-        </section>
-        <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+          <div className="header-row note topic-header tall short right">
+            <h4 className="header-text small tall-short spanish">
               Text Sketch (Spanish)
             </h4>
           </div>

@@ -55,7 +55,7 @@ export const Unit3SelectionSupport = [
     TextSketchSpanish: "NA",
   },
   {
-    Selection: "from Into the Air",
+    Selection: "Into the Air",
     Excerpt: true,
     MultilingualSummary:
       "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_intotheair_mls.pdf",
@@ -65,7 +65,7 @@ export const Unit3SelectionSupport = [
     TextSketchSpanish: "NA",
   },
   {
-    Selection: "from The Wright Brothers: How They Invented the Airplane",
+    Selection: "The Wright Brothers: How They Invented the Airplane",
     Excerpt: true,
     MultilingualSummary:
       "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_wrightbrothers_mls.pdf",

@@ -38,7 +38,7 @@ export const MultilingualGlossaries = () => {
       return languages.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row ${stripes(index)}`}>
+            <div className={`info-row gloss ${stripes(index)}`}>
               <p className="topic-item">{item}</p>
             </div>
           </React.Fragment>
@@ -53,18 +53,18 @@ export const MultilingualGlossaries = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
-                    className="icon-input"
+                    className="icon-input glossary"
                     alt="Critical Vocabulary PDF"
                     src={PDFIcon}
                   />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
-                <p className="icon-input"> </p>
+              <div className={`info-row icons gloss${stripes(index)}`}>
+                <p className="icon-input glossary"> </p>
               </div>
             )}
           </React.Fragment>
@@ -79,18 +79,18 @@ export const MultilingualGlossaries = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
-                    className="icon-input"
+                    className="icon-input glossary"
                     alt="Literary Terms and Academic Vocabulary PDF"
                     src={PDFIcon}
                   />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
-                <p className="icon-input"> </p>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
+                <p className="icon-input glossary"> </p>
               </div>
             )}
           </React.Fragment>
@@ -102,7 +102,26 @@ export const MultilingualGlossaries = () => {
   return (
     <div className="glossaries-container">
       <section className="above-table">
-        <h4 className="paragraph-header multi">Multilingual Glossaries</h4>
+        <div className="left-side">
+          <h4 className="paragraph-header multi">Multilingual Glossaries</h4>
+          <p className="above-paragraph">
+            These glossaries use students’ home languages to define Critical
+            Vocabulary from grade 6 Into Literature selections plus Literary
+            Terms and Academic Vocabulary that students will need as they
+            develop English fluency.
+          </p>
+        </div>
+        <div className="right-side">
+          <div className="key-container">
+            <b className="key-header">Key to Icons</b>
+            <div className="key-main">
+              <span className="key-item">
+                <img src={PDFIcon} className="key-icon" alt="PDF Icon" />
+                <p className="key-text anchorKey">Printable</p>
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="multilingual-table-container">
         <section className="column topic home-language">

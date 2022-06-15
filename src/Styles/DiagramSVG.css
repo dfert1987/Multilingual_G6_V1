@@ -1,0 +1,153 @@
+.prefix__st0,
+.prefix__st1,
+.prefix__st2,
+.prefix__st3,
+.prefix__st5 {
+  fill: none;
+  stroke: #a0147e;
+  stroke-width: 0.4665;
+}
+.prefix__st1,
+.prefix__st2,
+.prefix__st3,
+.prefix__st5 {
+  stroke-width: 0.5;
+}
+.prefix__st2,
+.prefix__st3,
+.prefix__st5 {
+  fill: #fff;
+}
+.prefix__st3,
+.prefix__st5 {
+  stroke-width: 0.511;
+}
+.prefix__st5 {
+  fill: #ebd9e7;
+  stroke-width: 0.5;
+}
+.prefix__st6 {
+  fill: #a0147e;
+}
+.prefix__st7 {
+  font-family: "Gilroy Bold";
+}
+.prefix__st8 {
+  font-size: 12px;
+}
+.prefix__st9 {
+  fill: #f99d1c;
+}
+.prefix__st10 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.25;
+}
+.prefix__st11 {
+  fill: #da521f;
+}
+.prefix__st12 {
+  fill: #fff;
+}
+.prefix__st13 {
+  font-size: 14px;
+}
+.prefix__st15 {
+  fill: #00babe;
+}
+.prefix__st16 {
+  clip-path: url(#prefix__SVGID_2_);
+}
+.prefix__st16,
+.prefix__st17,
+.prefix__st18 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.25;
+}
+.prefix__st17 {
+  stroke-linecap: round;
+}
+.prefix__st18 {
+  clip-path: url(#prefix__SVGID_4_);
+}
+.prefix__st20 {
+  stroke-width: 0.2528;
+}
+.prefix__st20,
+.prefix__st21,
+.prefix__st22 {
+  fill: none;
+  stroke: #000;
+}
+.prefix__st21 {
+  stroke-width: 0.2528;
+  stroke-linecap: round;
+}
+.prefix__st22 {
+  clip-path: url(#prefix__SVGID_6_);
+  stroke-width: 0.25;
+}
+
+.adapted {
+  cursor: pointer;
+}
+
+.multilingualSummaries {
+  cursor: pointer;
+}
+
+.authentic {
+  cursor: pointer;
+}
+
+.guardian-letters {
+  cursor: pointer;
+}
+
+.sketch {
+  cursor: pointer;
+}
+
+.multilingualGlossaries {
+  cursor: pointer;
+}
+
+.notice {
+  cursor: pointer;
+}
+
+.spanish-texts {
+  cursor: pointer;
+}
+
+.anchor {
+  cursor: pointer;
+}
+
+.multiParent {
+  cursor: pointer;
+}
+
+.anchor-chart {
+  cursor: pointer;
+}
+.glossaries {
+  cursor: pointer;
+}
+
+.summaries {
+  cursor: pointer;
+}
+
+.text-sketch {
+  cursor: pointer;
+}
+
+.notice-note {
+  cursor: pointer;
+}
+
+.spider {
+  width: 100%;
+}

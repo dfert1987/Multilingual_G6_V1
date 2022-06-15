@@ -52,7 +52,6 @@ export const Unit1SelectionSupport = [
     TextSketchPresentation: "NA",
     TextSketchEnglish: "NA",
     TextSketchSpanish: "NA",
-
     MultilingualSummary:
       "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_voicewordsfree_mls.pdf",
     Summary: "NA",
@@ -61,6 +60,7 @@ export const Unit1SelectionSupport = [
     Selection: "Better Than Words: Say It with a Selfie ",
     Excerpt: false,
     TextSketchPresentation: "NA",
+    TextSketchSpanish: "NA",
     MultilingualSummary:
       "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_betteromgselfie_mls.pdf",
     Summary:

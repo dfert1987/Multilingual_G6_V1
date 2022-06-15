@@ -4,6 +4,8 @@ import { Unit1AuthenticText } from "../../Assets/Data/Unit1AuthenticText";
 import { Unit1SelectionSupport } from "../../Assets/Data/Unit1SelectionSupport";
 import PDFIcon from "../../Assets/Icons/PDFIcon.png";
 import TOCEditIcon from "../../Assets/Icons/TOCEditIcon.svg";
+import PPTIcon from "../../Assets/Icons/PPTIcon.png";
+import EbookIcon from "../../Assets/Icons/EbookIcon.png";
 import "../../Styles/Resources.css";
 
 export const Unit1Resources = () => {
@@ -39,7 +41,7 @@ export const Unit1Resources = () => {
       return Unit1Letter.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)}`}>
+            <div className={`info-row icons gloss ${stripes(index)}`}>
               <p className="icon-input"> </p>
             </div>
           </React.Fragment>
@@ -54,7 +56,7 @@ export const Unit1Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -64,7 +66,7 @@ export const Unit1Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -80,7 +82,7 @@ export const Unit1Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -90,7 +92,7 @@ export const Unit1Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -106,7 +108,7 @@ export const Unit1Resources = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input svg"
@@ -116,7 +118,7 @@ export const Unit1Resources = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -145,7 +147,7 @@ export const Unit1Resources = () => {
         <div className="info-row book icon">
           <a href={Unit1AuthenticText.Link}>
             <img
-              className="icon-input tall-grid"
+              className="icon-input tall-grid unit1"
               alt="Authentic Text PDF Icon"
               src={PDFIcon}
             />
@@ -181,7 +183,7 @@ export const Unit1Resources = () => {
       return Unit1SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div className={`info-row icons selections ${stripes(index)} tall`}>
               {item.MultilingualSummary !== "NA" ? (
                 <a href={item.MultilingualSummary}>
                   <img
@@ -203,7 +205,7 @@ export const Unit1Resources = () => {
       return Unit1SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div className={`info-row icons selections ${stripes(index)} tall`}>
               {item.Summary !== "NA" ? (
                 <a href={item.Summary}>
                   <img
@@ -225,7 +227,7 @@ export const Unit1Resources = () => {
       return Unit1SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div className={`info-row icons selections ${stripes(index)} tall`}>
               {item.TextSketchEnglish !== "NA" ? (
                 <a href={item.TextSketchEnglish}>
                   <img
@@ -242,34 +244,12 @@ export const Unit1Resources = () => {
     }
   };
 
-  const presSketch = () => {
-    if (Unit1SelectionSupport) {
-      return Unit1SelectionSupport.map((item, index) => {
-        return (
-          <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
-              {item.TextSketchPresentation !== "NA" ? (
-                <a href={item.TextSketchPresentation}>
-                  <img
-                    className="icon-input tall"
-                    alt="Text Sketch Presentation"
-                    src={PDFIcon}
-                  />
-                </a>
-              ) : null}
-            </div>
-          </React.Fragment>
-        );
-      });
-    }
-  };
-
   const spanishSketch = () => {
     if (Unit1SelectionSupport) {
       return Unit1SelectionSupport.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row icons ${stripes(index)} tall`}>
+            <div className={`info-row icons selections ${stripes(index)} tall`}>
               {item.TextSketchSpanish !== "NA" ? (
                 <a href={item.TextSketchSpanish}>
                   <img
@@ -289,12 +269,89 @@ export const Unit1Resources = () => {
   return (
     <div className="unit-container">
       <section className="above-table unit">
-        <h4 className="paragraph-header">
-          Unit- and Selection-Specific Resources
-        </h4>
-        <h5 className="unit-title">Unit 1 Resources</h5>
+        <div className="above-points">
+          <div className="sides">
+            <div className="lefty">
+              <h4 className="paragraph-header">
+                Unit- and Selection-Specific Resources
+              </h4>
+              <p className="above-paragraph units">
+                Use these resources in concert with <i>Into Literature</i> units
+                and texts to keep your multilingual learners on track with the
+                content and skills you are teaching.
+              </p>
+            </div>
+            <div className="righty">
+              <div className="key-container">
+                <b className="key-header">Key to Icons</b>
+                <div className="key-main">
+                  <span className="key-item">
+                    <img src={PDFIcon} className="key-icon" alt="PDF Icon" />
+                    <p className="key-text anchorKey">Printable</p>
+                  </span>
+                  <span className="key-item">
+                    <img
+                      src={TOCEditIcon}
+                      className="key-icon edit"
+                      alt="TOC Icon"
+                    />
+                    <p className="key-text editable anchorKey">Editable</p>
+                  </span>
+                  <span className="key-item bottom">
+                    <img src={PPTIcon} className="key-icon" alt="PPT Icon" />
+                    <p className="key-text anchorKey high">Slides</p>
+                  </span>
+                  <span className="key-item bottom">
+                    <img
+                      src={EbookIcon}
+                      className="key-icon"
+                      alt="Ebook Icon"
+                    />
+                    <p className="key-text anchorKey high">Ebook</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="point-section">
+          <ul className="left-points">
+            <li className="point-item">
+              <b className="bold-point">Multilingual Parent/Guardian Letters</b>{" "}
+              To connect with your students’ families, you may send home these
+              editable letters in targeted home languages about the units of
+              study in Into Literature.
+            </li>
+            <li className="point-item bottoms">
+              <b className="bold-point">Spanish Authentic Texts</b> Each unit’s
+              theme is supported by an additional text, written in Spanish by a
+              well-known Hispanic author. You may share these pieces with
+              students whose home language is Spanish as either part of a unit
+              study or as an independent reading opportunity
+            </li>
+          </ul>
+          <ul className="right-points">
+            <li className="point-item">
+              <b className="bold-point">Multilingual Summaries</b> Each
+              selection is accompanied by a brief synopsis available in English,
+              Spanish, Haitian Creole, and Brazilian Portuguese
+            </li>
+            <li className="point-item bottoms">
+              <b className="bold-point">Summaries and Adapted Texts</b> Many
+              selections also include an extended summary or adapted text in
+              simplified English to help bridge students toward English
+              comprehension.
+            </li>
+            <li className="point-item bottoms">
+              <b className="bold-point">Text Sketch</b> These visual summaries
+              are available for some selections in both Spanish and simplified
+              English.
+            </li>
+          </ul>
+        </div>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <h5 className="unit-title">Unit 1 Resources</h5>
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header">
             <h4 className="header-text topic-header-text charts-text">
@@ -304,20 +361,22 @@ export const Unit1Resources = () => {
           <div className="main-column topics-text unit">{firstColumn()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Spanish</h4>
+          <div className="header-row note topic-header language">
+            <h4 className="header-text small threeLanguages">Spanish</h4>
           </div>
           <div className="main-column topics-text small-unit">{showSpan()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Portuguese</h4>
+          <div className="header-row note topic-header language">
+            <h4 className="header-text small threeLanguages">Portuguese</h4>
           </div>
           <div className="main-column topics-text small-unit">{showPort()}</div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
-            <h4 className="header-text small">Hatian Creole</h4>
+          <div className="header-row note topic-header right language">
+            <h4 className="header-text small threeLanguages haitian">
+              Haitian Creole
+            </h4>
           </div>
           <div className="main-column topics-text small-unit right">
             {showHaitian()}
@@ -326,20 +385,22 @@ export const Unit1Resources = () => {
         <section className="column topic note-charts-unit small invisible"></section>
         <section className="column topic note-charts-unit small invisible"></section>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header">
             <h4 className="header-text topic-header-text charts-text">
               Spanish Authentic Text
             </h4>
           </div>
-          <div className="main-column topics-text unit">{bookColumn()}</div>
+          <div className="main-column topics-text unit authentic unit1">
+            {bookColumn()}
+          </div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header">
+          <div className="header-row note topic-header right">
             <h4 className="header-text small">Spanish</h4>
           </div>
-          <div className="main-column topics-text small-unit right tall">
+          <div className="main-column topics-text small-unit right tall authentic unit1">
             {bookIcon()}
           </div>
         </section>
@@ -348,7 +409,7 @@ export const Unit1Resources = () => {
         <section className="column topic note-charts-unit small invisible"></section>
         <section className="column topic note-charts-unit small invisible"></section>
       </section>
-      <section className="notice-note-table-container bookmark">
+      <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
           <div className="header-row note topic-header tall">
             <h4 className="header-text topic-header-text charts-text tall">
@@ -361,7 +422,7 @@ export const Unit1Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+            <h4 className="header-text small tall-short multiling">
               Multilingual Summary
             </h4>
           </div>
@@ -371,8 +432,8 @@ export const Unit1Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
-              Summary/Adapted Text
+            <h4 className="header-text small tall-short summary">
+              Summary / Adapted Text
             </h4>
           </div>
           <div className="main-column topics-text small-unit right tall">
@@ -381,7 +442,7 @@ export const Unit1Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+            <h4 className="header-text small tall-short english">
               Text Sketch (English)
             </h4>
           </div>
@@ -390,18 +451,8 @@ export const Unit1Resources = () => {
           </div>
         </section>
         <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header tall">
-            <h4 className="header-text small tall">
-              Text Sketch (Presentation)
-            </h4>
-          </div>
-          <div className="main-column topics-text small-unit right tall">
-            {presSketch()}
-          </div>
-        </section>
-        <section className="column topic note-charts-unit small">
-          <div className="header-row note topic-header tall short">
-            <h4 className="header-text small tall-short">
+          <div className="header-row note topic-header tall short right">
+            <h4 className="header-text small tall-short spanish">
               Text Sketch (Spanish)
             </h4>
           </div>

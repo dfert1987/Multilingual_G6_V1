@@ -45,7 +45,7 @@ export const NoticeNote = () => {
       return titles.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row ${stripes(index)}`}>
+            <div className={`info-row gloss ${stripes(index)}`}>
               <p className="topic-item">{item}</p>
             </div>
           </React.Fragment>
@@ -60,13 +60,13 @@ export const NoticeNote = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img className="icon-input" alt="English PDF" src={PDFIcon} />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -82,13 +82,13 @@ export const NoticeNote = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img className="icon-input" alt="Spanish PDF" src={PDFIcon} />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -104,7 +104,7 @@ export const NoticeNote = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img
                     className="icon-input"
@@ -114,7 +114,7 @@ export const NoticeNote = () => {
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -127,7 +127,29 @@ export const NoticeNote = () => {
   return (
     <div className="notice-note-container">
       <section className="above-table">
-        <h4 className="paragraph-header">Notice & Note</h4>
+        <div className="left-side">
+          <h4 className="paragraph-header">Notice & Note</h4>
+          <p className="above-paragraph">
+            The <b>Notice & Note</b> protocol gives students the tools they need
+            to become proficient independent readers, in English or Spanish.
+            Look in the <b>Notice & Note</b> section on Ed for more resources.
+          </p>
+        </div>
+        <div className="right-side">
+          <div className="key-container">
+            <b className="key-header">Key to Icons</b>
+            <div className="key-main">
+              <span className="key-item">
+                <img src={PDFIcon} alt="PDF Icon" className="key-icon" />
+                <p className="key-text anchorKey">Printable</p>
+              </span>
+              <span className="key-item">
+                <img src={PPTIcon} alt="PPT Icon" className="key-icon" />
+                <p className="key-text anchorKey">Slides</p>
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="notice-note-table-container">
         <section className="column topic note-charts-big">

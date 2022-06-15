@@ -61,7 +61,7 @@ export const AnchorCharts = () => {
           <React.Fragment key={index}>
             {item !== "na" ? (
               <div className={`info-row icons ${stripes(index)}`}>
-                <a href={item}>
+                <a className="link" href={item}>
                   <img className="icon-input" alt="English PDF" src={PDFIcon} />
                 </a>
               </div>
@@ -83,7 +83,7 @@ export const AnchorCharts = () => {
           <React.Fragment key={index}>
             {item !== "na" ? (
               <div className={`info-row icons ${stripes(index)}`}>
-                <a href={item}>
+                <a className="link" href={item}>
                   <img
                     className="icon-input"
                     alt="Presentation"
@@ -109,7 +109,7 @@ export const AnchorCharts = () => {
           <React.Fragment key={index}>
             {item !== "na" ? (
               <div className={`info-row icons ${stripes(index)}`}>
-                <a href={item}>
+                <a className="link" href={item}>
                   <img className="icon-input" alt="Spanish PDF" src={PDFIcon} />
                 </a>
               </div>
@@ -127,8 +127,30 @@ export const AnchorCharts = () => {
   return (
     <div className="anchor-charts-container">
       <section className="above-table">
-        <h4 className="paragraph-header">Anchor Charts</h4>
-
+        <div className="left-side">
+          <h4 className="paragraph-header anchor">Anchor Charts</h4>
+          <p className="above-paragraph">
+            Use these visual skills summary charts in printable or slide format
+            to bridge multilingual learners toward English proficiency, or use
+            <b className="bold-above"> Anchor Charts in Spanish</b> to provide
+            more support as needed.
+          </p>
+        </div>
+        <div className="right-side">
+          <div className="key-container">
+            <b className="key-header">Key to Icons</b>
+            <div className="key-main">
+              <span className="key-item">
+                <img src={PDFIcon} alt="PDF Icon" className="key-icon" />
+                <p className="key-text anchorKey">Printable</p>
+              </span>
+              <span className="key-item">
+                <img src={PPTIcon} alt="PPT Icon" className="key-icon" />
+                <p className="key-text anchorKey">Slides</p>
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="anchor-chart-table-container">
         <section className="column topic">

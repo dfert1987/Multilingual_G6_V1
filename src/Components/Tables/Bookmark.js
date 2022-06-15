@@ -38,7 +38,7 @@ export const Bookmark = () => {
       return titles.map((item, index) => {
         return (
           <React.Fragment key={index}>
-            <div className={`info-row ${stripes(index)}`}>
+            <div className={`info-row gloss ${stripes(index)}`}>
               <p className="topic-item">{item}</p>
             </div>
           </React.Fragment>
@@ -53,13 +53,13 @@ export const Bookmark = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img className="icon-input" alt="English PDF" src={PDFIcon} />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
@@ -75,13 +75,13 @@ export const Bookmark = () => {
         return (
           <React.Fragment key={index}>
             {item !== "na" ? (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <a href={item}>
                   <img className="icon-input" alt="Spanish PDF" src={PDFIcon} />
                 </a>
               </div>
             ) : (
-              <div className={`info-row icons ${stripes(index)}`}>
+              <div className={`info-row icons gloss ${stripes(index)}`}>
                 <p className="icon-input"> </p>
               </div>
             )}
