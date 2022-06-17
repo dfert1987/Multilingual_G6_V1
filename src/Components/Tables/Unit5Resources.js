@@ -158,6 +158,18 @@ export const Unit5Resources = () => {
   const selectionsColumn = () => {
     if (Unit5SelectionSupport) {
       return Unit5SelectionSupport.map((item, index) => {
+        if (item.Selection === "Into the Lifeboat from Titanic Survivor") {
+          return (
+            <React.Fragment key={index}>
+              <div className="info-row white tall">
+                <p className="title-from">
+                  Into the Lifeboat <i className="from">from </i>Titanic
+                  Survivor
+                </p>
+              </div>
+            </React.Fragment>
+          );
+        }
         return (
           <React.Fragment key={index}>
             <div className={`info-row ${stripes(index)} tall`}>
@@ -271,7 +283,7 @@ export const Unit5Resources = () => {
       </section>
       <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
-          <div className="header-row note topic-header">
+          <div className="header-row note topic-header multilingual-column">
             <h4 className="header-text topic-header-text charts-text">
               Multilingual Parent/Guardian Letter
             </h4>

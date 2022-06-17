@@ -26,7 +26,7 @@ const Banner = () => {
             <h4 className="grade">GRADE</h4>
             <h2 className="number">6</h2>
           </div>
-          <h1 className="main-title">Multilingual Resources</h1>
+          <h1 className="main-title">Multilingual Learner Resources</h1>
         </div>
         <div className="navigation-container">
           <Link

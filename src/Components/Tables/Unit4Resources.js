@@ -287,7 +287,7 @@ export const Unit4Resources = () => {
       </section>
       <section className="notice-note-table-container bookmark unit">
         <section className="column topic note-charts-unit">
-          <div className="header-row note topic-header">
+          <div className="header-row note topic-header multilingual-column">
             <h4 className="header-text topic-header-text charts-text">
               Multilingual Parent/Guardian Letter
             </h4>
@@ -308,7 +308,7 @@ export const Unit4Resources = () => {
         </section>
         <section className="column topic note-charts-unit small">
           <div className="header-row note topic-header right language">
-            <h4 className="header-text small threeLanguages haitain">
+            <h4 className="header-text small threeLanguages haitian">
               Haitian Creole
             </h4>
           </div>

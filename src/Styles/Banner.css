@@ -50,7 +50,8 @@
   font-family: "Gilroy Extra Bold";
   font-size: 2.25em;
   margin: 0;
-  padding-left: 0.25em;
+  padding-left: 0.1em;
+  padding-right: 1em;
   padding-top: 0.75em;
   width: 50%;
 }
@@ -92,8 +93,8 @@
 
 @media (min-width: 1044px) {
   .nav-link {
-    font-size: 2em;
-    padding-top: 2.25em;
+    font-size: 1.5em;
+    padding-top: 3.4em;
   }
   .text-container {
     padding-left: 6em;
@@ -106,11 +107,12 @@
 
 @media (min-width: 1349px) {
   .nav-link {
-    padding-top: 2.3em;
+    font-size: 2em;
+    padding-top: 4.875em;
   }
 
   .number {
-    font-size: 4em;
+    font-size: 8em;
     margin-left: 0;
   }
 
@@ -118,7 +120,7 @@
     position: relative;
     top: 1em;
     margin-left: 0.25em;
-    font-size: 1em;
+    font-size: 2em;
     padding-top: 0;
     margin-top: 0;
   }
@@ -133,5 +135,25 @@
   .grade-container {
     position: relative;
     top: 1.7em;
+  }
+}
+
+@media (min-width: 1682px) {
+  .main-title {
+    padding-top: 0.5em;
+    padding-bottom: 0.15em;
+  }
+  .nav-link {
+    padding-top: 1.89em;
+  }
+  .number {
+    font-size: 4em;
+  }
+  .grade-container {
+    top: 0;
+    padding-top: 0.6em;
+  }
+  .grade {
+    font-size: 1em;
   }
 }

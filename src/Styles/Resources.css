@@ -86,11 +86,6 @@
   list-style: none;
 }
 
-.point-item::before {
-  content: "• ";
-  color: #8f1e74;
-}
-
 .point-item.bottoms {
   margin-top: 0.5em;
 }
@@ -99,6 +94,7 @@
   max-width: 45%;
   position: relative;
   right: 2.5em;
+  list-style-type: none;
 }
 .right-points {
   max-width: 45%;
@@ -271,7 +267,7 @@
 .info-row.icons.selections.unit3 {
   height: 5em;
 }
-.info-row.unit3 {
+.info-row.unit3.tall {
   height: 5.5em;
 }
 
@@ -295,6 +291,10 @@
   .info-row.icons.selections {
     padding-top: 0;
     height: 4.5em;
+  }
+
+  .info-row.icons.selections.unit3 {
+    padding-top: 0.5em;
   }
 
   .info-row.icons.selections.unit4 {
@@ -421,7 +421,7 @@
 
 @media (min-width: 1353px) {
   .info-row.icons.selections.unit3 {
-    height: 4.5em;
+    height: 5em;
   }
   .info-row.unit3 {
     height: 4.5em;
