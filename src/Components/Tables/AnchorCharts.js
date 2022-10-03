@@ -152,7 +152,7 @@ export const AnchorCharts = () => {
           </div>
         </div>
       </section>
-      <section className="anchor-chart-table-container">
+      <table className="anchor-chart-table-container">
         <section className="column topic">
           <div className="header-row topic-header">
             <h4 className="header-text topic-header-text">Topic</h4>
@@ -161,7 +161,7 @@ export const AnchorCharts = () => {
         </section>
         <section className="column link">
           <div className="header-row link-header">
-            <h4 className="header-text link-header-text">Enlglish PDF</h4>
+            <h4 className="header-text link-header-text">English PDF</h4>
           </div>
           <div className="main-column links english">{showEnglish()}</div>
         </section>
@@ -179,7 +179,7 @@ export const AnchorCharts = () => {
           </div>
           <div className="main-column links">{showSpanish()}</div>
         </section>
-      </section>
+      </table>
     </div>
   );
 };

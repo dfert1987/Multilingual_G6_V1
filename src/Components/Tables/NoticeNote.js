@@ -151,7 +151,7 @@ export const NoticeNote = () => {
           </div>
         </div>
       </section>
-      <section className="notice-note-table-container">
+      <table className="notice-note-table-container">
         <section className="column topic note-charts-big">
           <div className="header-row note topic-header">
             <h4 className="header-text topic-header-text charts-text">
@@ -184,7 +184,7 @@ export const NoticeNote = () => {
           </div>
           <div className="main-column topics-text">{showSpanish()}</div>
         </section>
-      </section>
+      </table>
     </div>
   );
 };

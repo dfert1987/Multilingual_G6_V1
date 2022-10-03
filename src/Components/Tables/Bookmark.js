@@ -92,7 +92,7 @@ export const Bookmark = () => {
   };
 
   return (
-    <section className="notice-note-table-container bookmark">
+    <table className="notice-note-table-container bookmark">
       <section className="column topic note-charts-bookmark-big">
         <div className="header-row note topic-header">
           <h4 className="header-text topic-header-text charts-text">
@@ -123,7 +123,7 @@ export const Bookmark = () => {
         </div>
       </section>
       <section className="column topic note-charts-pdfs invisible"></section>
-    </section>
+    </table>
   );
 };
 

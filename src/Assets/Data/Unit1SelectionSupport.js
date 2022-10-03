@@ -1,82 +1,64 @@
 export const Unit1SelectionSupport = [
-  {
-    Selection: "Brown Girl Dreaming",
-    Excerpt: true,
-    TextSketchPresentation: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_browngirldream_mls.pdf",
-    Summary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_satx_browngirldream_sa.pdf",
-    TextSketchEnglish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_txts_browngirldream.pdf",
-    TextSketchSpanish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06ls_13_txts_browngirldream_sp.pdf",
-  },
-  {
-    Selection: "Selfie: The Changing Face of Self-Portraits",
-    Excerpt: true,
-    TextSketchPresentation: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_selfiechanging_mls.pdf",
-    Summary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_satx_selfie_sa.pdf",
-    TextSketchEnglish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_selfie.pdf",
-    TextSketchSpanish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_selfie_sp.pdf",
-  },
-  {
-    Selection: "What's So Funny, Mr. Scieszka?",
-    Excerpt: false,
-    TextSketchPresentation: "NA",
-    TextSketchEnglish: "NA",
-    TextSketchSpanish: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_funnymrscieszka_mls.pdf",
-    Summary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_satx_whatsofunny_sa.pdf",
-  },
-  {
-    Selection: "A Voice",
-    Excerpt: false,
-    TextSketchPresentation: "NA",
-    TextSketchEnglish: "NA",
-    TextSketchSpanish: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_voicewordsfree_mls.pdf",
-    Summary: "NA",
-  },
-  {
-    Selection: "Words Like Freedom",
-    Excerpt: false,
-    TextSketchPresentation: "NA",
-    TextSketchEnglish: "NA",
-    TextSketchSpanish: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_voicewordsfree_mls.pdf",
-    Summary: "NA",
-  },
-  {
-    Selection: "Better Than Words: Say It with a Selfie ",
-    Excerpt: false,
-    TextSketchPresentation: "NA",
-    TextSketchSpanish: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_betteromgselfie_mls.pdf",
-    Summary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_satx_betterthanwords_sa.pdf",
-  },
-  {
-    Selection: "OMG, Not Another Selfie!",
-    Excerpt: false,
-    TextSketchPresentation: "NA",
-    MultilingualSummary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_betteromgselfie_mls.pdf",
-    Summary:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_satx_notanotherselfie_sa.pdf",
-    TextSketchEnglish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_notanotherselfie.pdf",
-    TextSketchSpanish:
-      "https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_notanotherselfie_sp.pdf",
-  },
+    {
+        Selection: 'The Breadwinner',
+        Excerpt: true,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_breadwinner_mls.pdf',
+        Summary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_satx_breadwinner_sa.pdf',
+        TextSketchEnglish:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_breadwinner.pdf',
+        TextSketchSpanish:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_breadwinner_sp.pdf',
+    },
+    {
+        Selection: "Life Doesn't Frighten Me",
+        Excerpt: false,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_lifefrighten_mls.pdf',
+        Summary: 'NA',
+        TextSketchEnglish: 'NA',
+        TextSketchSpanish: 'NA',
+    },
+    {
+        Selection: 'Fears and Phobias',
+        Excerpt: false,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_fearphobia_mls.pdf',
+        Summary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_satx_fearsphobias_sa.pdf',
+        TextSketchEnglish:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_fearsphobias.pdf',
+        TextSketchSpanish:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_03_txts_fearsphobias_sp.pdf',
+    },
+    {
+        Selection: 'Wired for Fear',
+        Excerpt: false,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_wiredforfear_mls.pdf',
+        Summary: 'NA',
+        TextSketchEnglish: 'NA',
+        TextSketchSpanish: 'NA',
+    },
+    {
+        Selection: 'Embarrassed? Blame Your Brain',
+        Excerpt: false,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_embarassbrain_mls.pdf',
+        Summary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_satx_embarrassbrain_sa.pdf',
+        TextSketchEnglish: 'NA',
+        TextSketchSpanish: 'NA',
+    },
+    {
+        Selection: 'The Ravine',
+        Excerpt: false,
+        MultilingualSummary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_ese_ravine_mls.pdf',
+        Summary:
+            'https://www.hmhco.com/content/literature/into_lit/g6/student/pdf/06le_13_satx_ravine_sa.pdf',
+        TextSketchEnglish: 'NA',
+        TextSketchSpanish: 'NA',
+    },
 ];

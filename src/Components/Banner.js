@@ -23,8 +23,8 @@ const Banner = () => {
       <div className="text-container">
         <div className="grade-and-title">
           <div className="grade-container">
-            <h4 className="grade">GRADE</h4>
-            <h2 className="number">6</h2>
+            <h1 className="grade">GRADE</h1>
+            <h1 className="number">6</h1>
           </div>
           <h1 className="main-title">Multilingual Learner Resources</h1>
         </div>
@@ -34,14 +34,15 @@ const Banner = () => {
             to="/"
             onClick={() => setDimmed("Diagram")}
           >
-            <h3 className={getClass("dia")}>Diagram</h3>
+            <p className={getClass("dia")} aria-current='page'>Diagram</p>
           </Link>
           <Link
             className="nav-link"
             to="/tablesection"
             onClick={() => setDimmed("Resources")}
+           
           >
-            <h3 className={getClass("res")}>Resources</h3>
+            <p className={getClass("res")}>Resources</p>
           </Link>
         </div>
       </div>
